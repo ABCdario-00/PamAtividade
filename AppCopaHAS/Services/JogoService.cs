@@ -1,7 +1,6 @@
 ﻿using AppCopaHAS.Models;
 using AppCopaHAS.Models.DTOs;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
 
 namespace AppCopaHAS.Services
 {
@@ -26,7 +25,6 @@ namespace AppCopaHAS.Services
 
             return lista;
         }
-
         public async Task<ObservableCollection<JogoDTO>> GetJogosDTOAsync()
         {
             string urlComplementar = string.Format("{0}", "/ObterTabela");

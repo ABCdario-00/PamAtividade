@@ -167,7 +167,6 @@ namespace AppCopaHAS.ViewModels.Jogos
                 {
                     Jogo jogoRetorno = await _jogoService.PostJogoAsync(j);
 
-                    await Shell.Current.DisplayAlert("Mensagem", "Dados salvos com sucesso!", "Ok");
                     await Shell.Current.GoToAsync("//tabela");
                 }
 
